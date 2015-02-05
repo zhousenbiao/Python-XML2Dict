@@ -1,0 +1,3 @@
+SyntaxError: Non-ASCII character '\xc3' in file Testclass.py on line 9, but no e
+ncoding declared; see http://www.python.org/peps/pep-0263.html for details
+

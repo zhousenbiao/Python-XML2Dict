@@ -8,10 +8,10 @@ public class DBconn {
 
 	public Connection getdbconn() throws SQLException {
 		String driver = "com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://192.168.1.2:3306/pvccrm?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true";
+		String url = "jdbc:mysql://127.0.0.1:3306/dbname?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true";
 
-		String user = "pvccrm";
-		String password = "mo439G76$$K^rw";
+		String user = "root";
+		String password = "pwd";
 		Connection conn=null;  
 		try {
 			Class.forName(driver);
@@ -26,10 +26,7 @@ public class DBconn {
 			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-//		finally{	
-//			conn.close();	
-//		}		
+		}	
 		return conn;
 	}
 }
